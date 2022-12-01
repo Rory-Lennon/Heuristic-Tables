@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubristic Tables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="OIP.jpg" type="image/icon type">
+</head>
+<body>
+  <section class="child">
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <th>Processing</th>
+        <th id="processing"></th>
+      </tr>  
+    </table>  
+    <br></br>    
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th onclick="sortNT24()">NTrades1D</th>
+        <th onclick="sortNT01()">NTrades1H</th>
+        <th onclick="sortNTDF()">NTradesDiff</th>
+        <th onclick="sortPC24()">priceChange1D</th>
+        <th onclick="sortPC01()">priceChange1H</th>
+      </tr>
+      <tbody id="table-trade-data">
+      </tbody>    
+    </table>
+  </section> 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</html>
+
